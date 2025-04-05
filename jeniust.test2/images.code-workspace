@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "images",
+			"path": "../images"
+		},
+		{
+			"name": "jeniust.test2",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

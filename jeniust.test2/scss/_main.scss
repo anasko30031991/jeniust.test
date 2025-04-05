@@ -1,0 +1,47 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import'./base';
+@import './utils/utils';
+@import './utils/texet';
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section {
+    padding: 48px 0;
+}
+@import './components/buttons';
+@import './components/links';
+@import './components/header';
+@import './components/hero\ section';
+@import './components/carousel';
+
+@import './utils/mixins';
+.circle {
+    @include circle(100px, 100px, white);
+}
+.circle-big {
+    @include circle(200, 200px, green);
+}
+.circle-small {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+@import './layouts/chefs.section';
+@import './scss/layouts/contact.section';
+@import './layouts/advantages';
+@import './layouts/formats.section';
+@import './layouts/traditions.section';
+@import './layouts/footer';
+@import './layouts/modal';
+@import './layouts/form';
+@import './layouts/mobile.menu';
+@import './layouts/section';
+@import './components/pagination';
+

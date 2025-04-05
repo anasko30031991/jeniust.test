@@ -1,0 +1,87 @@
+
+.footer {
+    text-align: center;
+    padding: 32px 0;
+}
+.footer-container {
+    display: flex;
+    gap: 20px;
+    
+    @media screen and (mim-width: var(--bp-tablet)) {
+        flex-direction: row;
+    }
+}
+.footer-nav {
+    flex-basis: 50%;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    @media screen and (mim-width: var(--bp-tablet)) {
+        flex-direction: row;
+        flex-basis: 50%;
+    }
+}
+.footer-golo {
+    flex-grow: 1;
+}
+.footer-menu {
+    flex-grow: 1;
+}
+.footer-address {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+}
+.address-lis {
+    flex-grow: 1;
+}
+.address-info {
+    flex-grow: 1;
+}
+.address-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.address-link:hover {
+    color: var(--color-brand-normal);
+}
+.address-icon {
+    fill: var(--color-primary-light);
+}
+.address-icon:hover {
+    fill: var(--color-brand-normal);
+    margin: 8px;
+}
+.address-copyright {
+    font-size: 14px;
+}
+.footer {
+    position: relative;
+    background-image: url('../images/footer-backgraund.png');
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.footer::before {
+    position: absolute;
+    width: 180px;
+    height: 120px;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-image: url('../images/decor-bread-smali.png');
+    content: '';
+}
+
+.footer::after {
+    position: absolute;
+    width: 380px;
+    height: 190px;
+    bottom: 0;
+    right: 0;
+    background-image: url('../images/decor-bread-large.png');
+    content: '';
+}

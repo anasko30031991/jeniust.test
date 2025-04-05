@@ -1,0 +1,33 @@
+
+.contact-section {
+    padding-bottom: 96px;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 20px;
+    @media screen and (mim-width: var(--bp-tablet)) {
+        flex-direction: row;
+        gap: 32px;
+    }
+}
+.contact-map {
+    flex-shrink: 0;
+    height: 176px;
+    margin: 0 -24px;
+    border-radius: 16px;
+    border: none;
+    @media screen and (mim-width: var(--bp-tablet)) {
+        width: 320px;
+        height: 500px;
+    }
+    
+    @media screen and (mim-width: var(--bp-dekstop)) {
+        width: 600px;
+        height: 592px;
+    }
+}
+.contact-title {
+    margin-bottom: 16px;
+}

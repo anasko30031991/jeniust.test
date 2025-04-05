@@ -1,0 +1,45 @@
+
+.traditions-section {
+    padding-top: 40px;
+    gap: 100px;
+    @media screen and (max-width: var(--bp-tablet)) {
+        padding: 96px;
+    }
+}
+.traditions-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+.traditions-content {
+    max-width: 710px;
+}
+.traditions-title {
+    margin-bottom: 42px;
+}
+.traditions-text .brand {
+    color: var(--color-brand-normal);
+    font-weight: 600;
+}
+.brant-uppercase {
+    color: var(--color-brand-normal);
+    text-transform: uppercase;
+}
+.traditions-text .uppercase {
+    text-transform: uppercase;
+}
+.brand {
+    color: var(--color-brand-normal);
+}
+.traditions-text:nth-child(2) {
+    max-width: 360px;
+}
+
+.traditions-img {
+    display: none;
+    border-radius: 400px 400px 0px 0px;
+    @media screen and (min-width: var(--bp-tablet)) {
+        display: block;        
+    }
+}
